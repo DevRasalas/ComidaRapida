@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Ordenes } from './ordenes';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent implements OnInit {
   confirmarPedidoBtn: any;
   listarCombos: any;
   articulosCarrito: any[] = [];
-
+  ordenes : Ordenes = new Ordenes();
   ngOnInit() {
     this.carrito = document.querySelector('#carrito');
     this.contenedorCarrito = document.querySelector('#lista-carrito tbody');
